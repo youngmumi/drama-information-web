@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drama Showcase</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <!-- Pretendard 폰트 -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+</head>
+<body>
+  <!-- 로딩 스피너 -->
+  <div id="loading" class="loading-overlay">
+    <div class="spinner"></div>
+    <p>드라마 정보를 불러오는 중...</p>
+  </div>
+
+  <header class="site-header">
+    <h1>Drama Showcase</h1>
+    <div class="search-container">
+      <input id="searchInput" type="text" placeholder="제목으로 검색…" />
+      <button id="clearSearch" class="clear-btn" title="검색어 지우기">×</button>
+    </div>
+  </header>
+
+  <!-- Hero + Carousel -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Featured Dramas</h2>
+      <p>가장 인기 있는 드라마를 만나보세요.</p>
+    </div>
+    <div class="carousel-container">
+      <div class="swiper-container" id="dramaCarousel">
+        <div class="swiper-wrapper">
+          <!-- JS 에서 .swiper-slide를 주입합니다 -->
+        </div>
+        <!-- 네비게이션 화살표 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="results-header">
+      <span id="resultsCount"></span>
+    </div>
+    <div id="dramaList" class="drama-list"></div>
+    <div id="noResults" class="no-results" style="display: none;">
+      <h3>검색 결과가 없습니다</h3>
+      <p>다른 키워드로 검색해보세요.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    © 2025 Drama Showcase
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
