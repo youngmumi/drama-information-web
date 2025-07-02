@@ -24,6 +24,10 @@
 ## Main Page
 <img src="./readme/MainPage.png">
 
+<br>
+
+<img src="./readme/MainPage2.png">
+
 ><li>드라마 목록: dramas.json에서 불러온 데이터를 카드 형태로 그리드 레이아웃으로 표시합니다.<br>
 ><li>검색 기능: 제목, 장르, 설명 내 키워드를 디바운스 처리된 입력으로 필터링합니다.<br>
 ><li>로딩 스피너: 데이터 로딩 시 오버레이 형태의 스피너를 표시하여 UX를 개선합니다.<br>
