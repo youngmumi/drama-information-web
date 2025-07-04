@@ -13,7 +13,7 @@ function showError(msg) {
     <main style="padding:2rem; text-align:center; color:#c00;">
       <h2>오류</h2>
       <p>${msg}</p>
-      <p><a href="index.html">← 목록으로 돌아가기</a></p>
+      <p><a href="../../index.html">← 목록으로 돌아가기</a></p>
     </main>`;
 }
 
