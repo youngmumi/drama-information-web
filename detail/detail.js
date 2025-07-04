@@ -22,7 +22,7 @@ async function loadDetail() {
     const id = getId();
     if (!id) throw new Error('유효한 드라마 ID가 없습니다.');
 
-    const res = await fetch('./dramas.json');
+    const res = await fetch('../data/dramas.json');
     if (!res.ok) throw new Error(`데이터를 불러올 수 없습니다 (status ${res.status})`);
 
     const list = await res.json();

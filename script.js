@@ -41,7 +41,7 @@ async function loadDramas() {
     console.log('드라마 데이터 로드 시작');
     showLoading();
     
-    const res = await fetch('./dramas.json');
+    const res = await fetch('../data/dramas.json');
     console.log('fetch 응답:', res.status, res.statusText);
     
     if (!res.ok) {
@@ -139,7 +139,7 @@ function renderDramas(list, isFiltered = false) {
     const safeYear = drama.year ? String(drama.year) : '연도 정보 없음';
     const safeGenre = escapeHtml(drama.genre || '장르 정보 없음');
     const posterUrl = drama.poster || 'https://via.placeholder.com/300x450/f0f0f0/666?text=No+Image';
-    const detailUrl = `./detail.html?id=${drama.id}`;
+    const detailUrl = `../detail/detail.html?id=${drama.id}`;
     
     return `
       <a href="${detailUrl}" class="drama-card-link">
